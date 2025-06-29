@@ -102,7 +102,7 @@ pwgen -s 264 1
 
 ![pwgen_string](./screenshots/pwgen_string.png)
 
-> The string is ready. Don't forget to add `Yesss!"` at the end because we need to overwrite the value of the `local_10` variable after overflow. That is, by the conditions after overflow
+> The string is ready. Don't forget to add `"Yesss!"` at the end because we need to overwrite the value of the `local_10` variable after overflow. That is, by the conditions after overflow
 > I replace the value of the current variable `local_10` with the string `"Yesss!"` and then the logic will be as follows - `iVarl == 0 ` -> `"Yesss!" == "Yesss!"`.
 
 > I run the `mc4_censored` file and send there the generated string with `Yesss!` added:
